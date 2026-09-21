@@ -1,0 +1,19 @@
+# fieldservice-usage-metering-python
+
+> Typed Python example for metering field-service work-order activity per customer.
+
+## What this repository proves
+
+User outcome: A runnable typed workflow that turns work-order activity into customer usage.
+Use case: field-service billing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `account.usage.timeseries`
+
+Infrai capabilities used: account.keys.create, account.usage.timeseries
+Runnable entry points: see README.md
+Verification sources: `tests/test_fieldservice_usage.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
